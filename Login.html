@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="Login.css">
+<link rel="shortcut icon" href="jvslogo.jpg">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/icon?family=Materials+Icons">
+<style>
+.header {
+	background-color: orange;
+	height: 60px;
+	position: relative;
+}
+
+img {
+	margin-top: 5px;
+	margin-left: 40px;
+	border-radius: 40px;
+	/* border: 1px solid black; */
+	box-shadow: 2px 2px 5px black;
+}
+
+.Rentals {
+	position: absolute;
+	top: 10px;
+	left: 100px;
+	font-size: 30px;
+	/* box-shadow: ; */
+	color: white;
+	font-family: 'Times New Roman', Times, serif;
+	text-shadow: 2px 2px 4px black;
+}
+
+.Registration {
+	position: absolute;
+	right: 40px;
+	top: 17px;
+	/* font-family: 'Times New Roman', Times, serif; */
+	background-color: white;
+	color: orange;
+	border: 2px solid white;
+	border-radius: 2px;
+	padding: 3px 10px 3px 10px;
+	/* box-shadow: 2px 5px 10px rgb(29, 27, 27); */
+	font-family: 'Times New Roman', Times, serif;
+	/* border-collapse: collapse; */
+}
+
+.Registration:focus {
+	outline: none;
+	background-color: rgb(193, 201, 209);
+}
+
+.Contact {
+	position: absolute;
+	right: 250px;
+	top: 30px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.About {
+	position: absolute;
+	right: 380px;
+	top: 30px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.Home {
+	position: absolute;
+	right: 470px;
+	top: 30px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+</style>
+
+</head>
+<body>
+	<div class="heroimage">
+		<div class="header">
+			<img src="Images/JVS2O.jpg" height="50px" width="50px;">
+			<p class="Rentals">
+				<b>RENTALS</b>
+			</p>
+			
+				<button class="Registration">
+					<b>Sign-Up</b>
+				</button>
+				<h5 class="Contact fa-solid fa-phone">
+					<a href="" style="color: white;">Contact Us</a>
+				</h5>
+				<h5 class="About">
+					<a href="" style="color: white;">About</a>
+				</h5>
+				<h5 class="Home">
+					<a href="" style="color: white;">Home</a>
+				</h5>
+				<!-- <h5> class="text" ><a href="" class="Registration">Registration</a></h5> -->
+		</div>
+		
+		<div class="herotext">
+			<form action="Login" class="form" method="post">
+				<h3 class="login" style="color: white;">
+					<b>LOG-IN</b>
+				</h3>
+				<!-- <label for="username" class="username">Username or Mobile</label> -->
+				<input type="email" name="email" id="" class="form-control text"
+					placeholder="Email">
+				<!-- <label for="password" class="password">Password</label> -->
+				<input type="password" name="Password" id="p"
+					class="form-control text" placeholder="Password">
+
+				<button class="btn btn-success text button">LOGIN</button>
+
+			</form>
+		</div>
+	</div>
+
+	<script>
+		
+	</script>
+</body>
+</html>

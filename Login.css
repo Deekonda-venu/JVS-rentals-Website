@@ -1,0 +1,72 @@
+.heroimage{
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("Images/bike.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 729px;
+    position: relative;
+    border-image: 20px;
+    /* background: linear-gradient(0,0,0,0.5),rgba(0, 0,0 , 03); */
+    
+    
+}
+.herotext{
+    /* border: 2px solid orange; */
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    position: absolute;
+    top: 180px;
+    left: 550px;
+   
+}
+.login{
+    text-align: center;
+    /* color: orange; */
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+}
+.herotext:hover{
+    background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4));
+    
+   
+}
+.text{
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.username{
+    color: white;
+} 
+.password{
+    color: white;
+}
+/* .Registration{
+    text-align: center;
+    color: white;
+    
+} */
+.Registration:hover{
+    color: rgb(255, 166, 0);
+    text-decoration: dashed;
+}
+.form-control:focus{
+    border-color: orange;
+    box-shadow: 0 0 10px rgba(255, 160, 122, 0.5);
+    outline: none;
+    
+   
+}
+.btn-success{
+    background-color: orange;
+    border-color: orange;
+    /* color: orange; */
+}
+/* @media only screen and (max-width: 600px) {
+    .heroimage{
+        background-color: black;
+    }
+} */

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FAQ</title>
+<link rel="stylesheet" href="Header.css" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<style>
+body {
+	font-family: Arial, sans-serif;
+	background-color: #fff;
+}
+
+.contact-container {
+	margin-top: 150px;
+	padding: 40px;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #f9f9f9;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+	text-align: center;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+
+.form-group label {
+	font-weight: bold;
+}
+
+.btn-primary {
+	background-color: orange;
+	border: none;
+}
+
+.btn-primary:hover {
+	background-color: darkorange;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	padding: 30px 20px;
+	text-align: center;
+	width: 100%;
+	margin-top: 80px;
+}
+
+footer a {
+	color: white;
+	margin: 0 10px;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+footer a:hover {
+	color: orange;
+}
+
+footer i {
+	font-size: 18px;
+	margin: 0 10px;
+	transition: transform 0.3s ease;
+}
+
+footer i:hover {
+	color: orange;
+	transform: scale(1.2);
+}
+
+footer .copy {
+	margin-top: 15px;
+	font-size: 14px;
+	color: #aaa;
+}
+
+.Home {
+	position: absolute;
+	right: 620px;
+	top: 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.Contact {
+	position: absolute;
+	right: 250px;
+	top: 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.About {
+	position: absolute;
+	right: 380px;
+	top: 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.Book {
+	position: absolute;
+	right: 490px;
+	top: 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.Terms {
+	position: absolute;
+	right: 70px;
+	top: 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+</style>
+</head>
+<body>
+	<div class="header" id="nav"></div>
+	<button class="navbar-toggler" onclick="toggleMenu()">
+		<span class="bar"></span> <span class="bar"></span> <span class="bar"></span>
+	</button>
+
+	<div class="menu" id="menu">
+		<button type="button" class="x" id="close" s>X</button>
+		<a href="Profile.jsp" class="item"><i class="fas fa-user"
+			style="margin-right: 8px;"></i> Profile</a> <a href="HelpCenter.html"
+			class="item">Help Center</a> <a href="FAQ.html" class="item">FAQ</a>
+		<a href="Privacy policy.html" class="item">Privacy Policy</a> <a
+			href="Feedback.html" class="item">Feedback</a>
+	</div>
+
+	<!-- Header -->
+	<div class="header" id="nav">
+		<img src="Images/JVS2O.jpg" height="50px" width="50px;"
+			class="logoimage">
+		<p class="Rentals">
+			<b>RENTALS</b>
+		</p>
+		<h5>
+			<a href="Home.html" class="Home">Home</a>
+		</h5>
+		<h5>
+			<a href="BookNow.html" class="Book">BookNow</a>
+		</h5>
+		<h5>
+			<a href="Contact_us.html" class="Contact">Contact Us</a>
+		</h5>
+		<h5>
+			<a href="About_Us.html" class="About">About Us</a>
+		</h5>
+		<h5>
+			<a href="Terms.html" class="Terms">Terms & Services</a>
+		</h5>
+	</div>
+
+
+
+
+	<div class="contact-container">
+		<h2>Frequently Asked Questions</h2>
+		<div class="form-group">
+			<p>
+				<strong>Q1: How do I book a rental?</strong><br> A: You can
+				book directly through the homepage by clicking on the desired item.
+			</p>
+
+			<p>
+				<strong>Q2: What payment methods are accepted?</strong><br> A:
+				We accept credit/debit cards, UPI, and net banking.
+			</p>
+
+			<p>
+				<strong>Q3: Can I cancel or modify a booking?</strong><br> A:
+				Yes, you can cancel or reschedule your booking from your profile
+				dashboard.
+			</p>
+		</div>
+	</div>
+
+
+	<!-- Footer -->
+	<footer class="copy">
+		<a href="https://www.facebook.com/" target="_blank"><i
+			class="fab fa-facebook-f"></i></a> <a href="https://www.instagram.com/"
+			target="_blank"><i class="fab fa-instagram"></i></a> <a
+			href="https://www.twitter.com/" target="_blank"><i
+			class="fab fa-twitter"></i></a>
+		<div class="copy">© 2025 RENTALS. All rights reserved.</div>
+	</footer>
+	<script>
+		var a;
+
+		window.onload = function() {
+			a = 0;
+			document.querySelector(".navbar-toggler").onclick = toggleMenu;
+			document.getElementById("close").onclick = toggleMenu;
+		};
+
+		function toggleMenu() {
+			console.log("jj");
+			if (a == 0) {
+				document.getElementById('menu').style.left = "0px";
+				document.getElementById('menu').style.transition = "all 1s";
+				document.getElementById("menu").style.zIndex = 999;
+				a++;
+			} else {
+				document.getElementById('menu').style.left = "-250px";
+				document.getElementById('menu').style.transition = "all 1s";
+				a = 0;
+			}
+		}
+	</script>
+
+</body>
+</html>

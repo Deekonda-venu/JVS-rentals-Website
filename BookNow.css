@@ -1,0 +1,247 @@
+.header{
+    
+    
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: orange; /* Change to solid on scroll with JS */
+  
+}
+.Contact{
+    position: absolute;
+    right: 250px;
+    top: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.About{
+    position: absolute;
+    right: 380px;
+    top: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.Book{
+    position: absolute;
+    right: 470px;
+    top: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.Terms{
+	position: absolute;
+    right: 70px;
+    top: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.location{
+  position: absolute;
+    left: 350px;
+    top: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px 20px 5px 20px;
+    /* padding-right: 25px; */
+    background-color: orange;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 15px;
+    /* display: none; */
+    /* pointer-events: none;  */
+    
+}
+
+.location:hover{
+  background: linear-gradient(rgb(255, 255, 255,0.6),rgb(255, 255, 255,0.6));
+}
+
+.Rentals{
+    position: absolute;
+    top: 13px;
+    left: 140px;
+    font-size: 30px;
+    /* box-shadow: ; */
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 4px black;
+}
+.logoimage{
+    margin-top: 8px;
+    margin-left:80px;
+    border-radius: 40px;
+    /* border: 1px solid black; */
+    box-shadow: 2px 2px 5px black;
+}
+
+
+.navbar-toggler {
+    
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .navbar-toggler:hover{
+    background: linear-gradient( rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.2));
+    border-radius: 2px;
+
+  }
+  .navbar-toggler .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: white;
+    transition: 0.3s;
+    
+  }
+
+  .home-icon {
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .menu {
+    /* display: none; */
+    position: absolute;
+    top: 0px;
+    left: -250px;
+    height: 729px;
+    background-color: orange;
+    /* border: 1px solid #ccc; */
+    border-top-right-radius: 5px;
+    padding: 10px 0;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+   
+    flex-direction: column;
+  }
+
+  .menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+
+  .menu a:hover {
+    background-color: black;
+    /* background: linear-gradient(0,0,0,); */
+  }
+
+  .menu.show {
+    display: flex;
+  }
+  .x{
+    color: white;
+    /* position: absolute; */
+    margin-left: 150px;
+    /* font-size: 30px; */
+    top: 0px;
+    /* padding: 2px 5px 2px 5px; */
+    margin-right: 0px;
+    border: none;
+    /* border: 2px solid white; */
+    /* border-radius: 360px; */
+    text-align: center;
+    background-color: orange;
+    font-size: 25px;
+
+    
+}
+.x:hover{
+    color: black;
+    
+}
+.btx{
+    background-color: orange;
+    border: orange;
+}
+.item{
+    font-family: 'Times New Roman', Times, serif;
+    /* padding: 20px; */
+    font-size: 20px;
+}
+.poplocatons{
+  background-color: white;
+  position: fixed;
+  left: 300px;
+  top: 100px;
+  width: 900px;
+  height: 600px;
+  display: none;
+  border-radius: 5px;
+}
+.locationbody{
+  border: 2px solid rgba(255, 166, 0, 0.26);
+  position: fixed;
+  top: 165px;
+  left: 325px;
+  bottom: 50px;
+  right: 345px;
+  border-radius: 5px;
+  display: flex;
+
+}
+.col1{
+  display: grid;
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  width: 350px;
+  margin-top: 40px;
+  border-radius: 2px;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 200px;
+
+}
+.col2{
+  display: grid;
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  width: 350px;
+  margin-top: 40px;
+  border-radius: 2px;
+  height: 200px;
+  
+}
+.footer{
+  background-color: rgba(0, 0, 0, 0.911);
+  height: 450px;
+  margin-top: 100px;
+}
+.firstrow{
+  margin-top: 80px;
+}
+.horizentalline{
+  margin-top: 80px;
+  width: 90%;
+}
+.copy{
+  color: white;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+
+}

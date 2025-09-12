@@ -1,0 +1,428 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="Home.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<style>
+ .service-card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: scale(1.03);
+    }
+    .service-icon {
+      font-size: 40px;
+      color: orange;
+    }
+    .head {
+      background: orange;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+.Contact {
+	position: absolute;
+	right: 250px;
+	top: 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.Home {
+	position: absolute;
+	right: 620px;
+	top: 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.About {
+	position: absolute;
+	right: 380px;
+	top: 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.Book {
+	position: absolute;
+	right: 490px;
+	top: 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.Terms {
+	position: absolute;
+	right: 70px;
+	top: 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+.seconddiv {
+	background-image: url(back1.png);
+	height: 100%;
+}
+
+
+.x {
+	color: white;
+	/* position: absolute; */
+	margin-left: 150px;
+	/* font-size: 30px; */
+	top: 0px;
+	/* padding: 2px 5px 2px 5px; */
+	margin-right: 0px;
+	border: none;
+	/* border: 2px solid white; */
+	/* border-radius: 360px; */
+	text-align: center;
+	background-color: orange;
+	font-size: 25px;
+}
+
+.x:hover {
+	color: black;
+}
+
+.btx {
+	background-color: orange;
+	border: orange;
+}
+
+.item {
+	font-family: 'Times New Roman', Times, serif;
+	/* padding: 20px; */
+	font-size: 20px;
+}
+
+.footer {
+	background-color: rgba(0, 0, 0, 0.911);
+	height: 450px;
+	margin-top: 100px;
+}
+
+.firstrow {
+	margin-top: 80px;
+}
+
+.horizentalline {
+	margin-top: 80px;
+	width: 90%;
+}
+
+.copy {
+	color: white;
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+</style>
+
+</head>
+<body>
+	<div class="header" id="nav">
+		<button class="navbar-toggler" onclick="toggleMenu()">
+			<span class="bar"></span> <span class="bar"></span> <span class="bar"></span>
+		</button>
+		<div class="menu" id="menu">
+			<button type="button" class="x" id="close">X</button>
+			<a href="Profile.jsp" class="item"><i class="fas fa-user"
+				style="margin-right: 8px;"></i> Profile</a> <a href="HelpCenter.html"
+				class="item">Help Center</a> <a href="FAQ.html" class="item">FAQ</a>
+			<a href="Privacy policy.html" class="item">Privacy Policy</a> <a
+				href="Feedback.html" class="item">Feedback</a>
+		</div>
+		<img src="Images/JVS2O.jpg" height="50px" width="50px;"
+			class="logoimage">
+		<p class="Rentals">
+			<b>RENTALS</b>
+		</p>
+		
+		<h5>
+				<a href="Home.html" class="Home">Home</a>
+			</h5>
+			<h5>
+				<a href="BookNow.html" class="Book">BookNow</a>
+			</h5>
+			<h5>
+				<a href="Contact_us.html" class="Contact">Contact Us</a>
+			</h5>
+			<h5>
+				<a href="About_Us.html" class="About">About Us</a>
+			</h5>
+			<h5>
+				<a href="Terms.html" class="Terms">Terms & Services</a>
+			</h5>
+	</div>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="item active one">
+				<img src="Images/JVSRENTSCOOTY.png" alt="Los Angeles"
+					style="width: 100%; height: 100%;">
+			</div>
+
+			<div class="item two">
+				<img src="Images/Silde1.png.png" alt="Chicago"
+					style="width: 100%; height: 100%;">
+			</div>
+
+			<div class="item three">
+				<img src="back3.png" alt="New york"
+					style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span> <span
+			class="sr-only">Previous</span>
+		</a> <a class="right carousel-control" href="#myCarousel"
+			data-slide="next"> <span
+			class="glyphicon glyphicon-chevron-right"></span> <span
+			class="sr-only">Next</span>
+		</a>
+
+	</div>
+	<br>
+	<br>
+	<div class="head">
+    <h1>Our Services</h1>
+    <p>Explore what we offer</p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 mb-4">
+        <div class="card service-card text-center p-4">
+          <div class="service-icon mb-3">
+            <i class="fas fa-home"></i>
+          </div>
+          <h4>Property Rentals</h4>
+          <p>We offer a wide variety of rental properties to suit your needs and budget.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card service-card text-center p-4">
+          <div class="service-icon mb-3">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h4>Maintenance Support</h4>
+          <p>Our 24/7 maintenance team is here to help with any property issues.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card service-card text-center p-4">
+          <div class="service-icon mb-3">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h4>Customer Service</h4>
+          <p>Get assistance anytime with our dedicated support team.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  
+  <br>
+  <br>
+	
+  <section class="offers-section py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4 text-primary" style="color: orange;">Latest Offers</h2>
+    <div class="row">
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <h5 class="card-title">🏠 10% Off First Month</h5>
+            <p class="card-text">New customers enjoy 10% off on their first rental booking this summer!</p>
+            <a href="#" class="btn btn-primary btn-sm" style="background-color: orange;">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <h5 class="card-title">📦 Free Furniture Setup</h5>
+            <p class="card-text">Get complimentary furniture setup for properties rented for more than 6 months.</p>
+            <a href="#" class="btn btn-primary btn-sm" style="background-color: orange;">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <h5 class="card-title">💰 Cashback on Long-Term Rentals</h5>
+            <p class="card-text">Earn ₹5,000 cashback when you book a 1-year rental plan.</p>
+            <a href="#" class="btn btn-primary btn-sm" style="background-color: orange;">Claim Offer</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+	
+	
+	
+	
+	
+	
+
+	
+
+	<div class="footer"
+		style="background-color: #222; color: white; padding-top: 30px;">
+		<div class="container-fluid">
+			<div class="row firstrow">
+				<div class="col-md-1"></div>
+
+				<div class="col-md-10">
+					<div class="row">
+
+						<!-- Logo and Name -->
+						<div class="col-md-3">
+							<img src="Images/JVS2O.jpg" alt="JVS Logo" height="50px"
+								width="50px">
+							<h3 style="font-family: 'Times New Roman', Times, serif;">JVS
+								RENTALS</h3>
+						</div>
+
+						<!-- Spacer -->
+						<div class="col-md-1"></div>
+
+						<!-- About Column -->
+						<div class="col-md-2">
+							<h4 style="font-family: 'Times New Roman', Times, serif;">Company</h4>
+							<a href="#" style="color: white; display: block;">About Us</a> <a
+								href="#" style="color: white; display: block;">Our Services</a>
+							<a href="#" style="color: white; display: block;">Privacy
+								Policy</a>
+						</div>
+
+						<!-- Spacer -->
+						<div class="col-md-1"></div>
+
+						<!-- Support Column -->
+						<div class="col-md-2">
+							<h4 style="font-family: 'Times New Roman', Times, serif;">Support</h4>
+							<a href="#" style="color: white; display: block;">FAQ</a> <a
+								href="#" style="color: white; display: block;">Help Center</a> <a
+								href="#" style="color: white; display: block;">Feedback</a>
+						</div>
+
+						<!-- Spacer -->
+						<div class="col-md-1"></div>
+
+						<!-- Contact Column -->
+						<div class="col-md-2">
+							<h4 style="font-family: 'Times New Roman', Times, serif;">Contact</h4>
+							<a href="#" style="color: white; display: block;">Contact Us</a>
+							<a href="#" style="color: white; display: block;">Location</a> <a
+								href="#" style="color: white; display: block;">Terms of
+								Service</a>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+
+		<!-- Horizontal Line -->
+		<hr style="border-color: white; margin-top: 30px;">
+
+		<!-- Social Media Icons -->
+		<footer class="copy" style="margin-top: 20px; text-align: center;">
+			<a href="https://www.facebook.com/" target="_blank"
+				style="color: white; margin: 0 10px;"> <i
+				class="fab fa-facebook-f"></i>
+			</a> <a href="https://www.instagram.com/" target="_blank"
+				style="color: white; margin: 0 10px;"> <i
+				class="fab fa-instagram"></i>
+			</a> <a href="https://www.youtube.com/" target="_blank"
+				style="color: white; margin: 0 10px;"> <i class="fab fa-youtube"></i>
+			</a> <a href="https://twitter.com/" target="_blank"
+				style="color: white; margin: 0 10px;"> <i class="fab fa-twitter"></i>
+			</a>
+		</footer>
+
+		<!-- Copyright -->
+		<h4 class="copy" style="text-align: center; margin-top: 15px;">&copy;
+			2025 All Rights Reserved | JVS Rentals</h4>
+	</div>
+
+
+
+	<script>
+		window.addEventListener("scroll", changecolor);
+
+		function changecolor() {
+			console.log("venu");
+			if (window.scrollY == 0) {
+				document.getElementById("nav").style.backgroundColor = `transparent`;
+			} else {
+				document.getElementById("nav").style.backgroundColor = `orange`;
+			}
+
+		}
+		var a;
+
+		window.onload = function() {
+			a = 0;
+			document.querySelector(".navbar-toggler").onclick = toggleMenu;
+			document.getElementById("close").onclick = toggleMenu;
+		};
+
+		function toggleMenu() {
+			console.log("jj");
+			if (a == 0) {
+				document.getElementById('menu').style.left = "0px";
+				document.getElementById('menu').style.transition = "all 1s";
+				document.getElementById("menu").style.zIndex = 999;
+				a++;
+			} else {
+				document.getElementById('menu').style.left = "-250px";
+				document.getElementById('menu').style.transition = "all 1s";
+				a = 0;
+			}
+		}
+		
+	</script>
+</body>
+</html>

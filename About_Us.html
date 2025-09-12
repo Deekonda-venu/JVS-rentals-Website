@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+<link rel="stylesheet" href="Header.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<style>
+.lower {
+	margin-top: -90px;
+	background-color: orange;
+	width: 100%;
+	z-index: 0;
+	height: 500px;
+	/* position: relative; */
+}
+
+.Friends {
+	/* position: relative; */
+	z-index: 0;
+	margin-top: 200px;
+	margin-left: 500px;
+}
+
+.friends {
+	/* position: absolute; */
+	z-index: 0;
+}
+
+.AboutText {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 2em;
+	font-weight: bold;
+	z-index: -1;
+	text-shadow: 2px 2px 4px #000; /* Optional for better readability */
+}
+
+.box {
+	border: 2px solid white;
+	position: absolute;
+	top: 600px;
+	width: 70%;
+	left: 15%;
+	border-radius: 5px;
+}
+.Contact {
+	position: absolute;
+	right: 250px;
+	top: 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.Home {
+	position: absolute;
+	right: 620px;
+	top: 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.About {
+	position: absolute;
+	right: 380px;
+	top: 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.Book {
+	position: absolute;
+	right: 490px;
+	top: 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.Terms {
+	position: absolute;
+	right: 70px;
+	top: 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+</style>
+<body>
+
+	<!-- Header -->
+	<div class="header" id="nav">
+		<button class="navbar-toggler" onclick="toggleMenu()">
+			<span class="bar"></span> <span class="bar"></span> <span class="bar"></span>
+		</button>
+
+		<div class="menu" id="menu">
+			<button type="button" class="x" id="close" s>X</button>
+			<a href="Profile.jsp" class="item"><i class="fas fa-user"
+				style="margin-right: 8px;"></i> Profile</a> <a href="HelpCenter.html"
+				class="item">Help Center</a> <a href="FAQ.html" class="item">FAQ</a>
+			<a href="Privacy policy.html" class="item">Privacy Policy</a> <a
+				href="Feedback.html" class="item">Feedback</a>
+		</div>
+
+		<img src="Images/JVS2O.jpg" height="50px" width="50px;"
+			class="logoimage">
+		<p class="Rentals">
+			<b>RENTALS</b>
+		</p>
+
+
+
+
+
+		<h5>
+			<a href="Home.html" class="Home">Home</a>
+		</h5>
+		<h5>
+			<a href="BookNow.html" class="Book">BookNow</a>
+		</h5>
+		<h5>
+			<a href="Contact_us.html" class="Contact">Contact Us</a>
+		</h5>
+		<h5>
+			<a href="About_Us.html" class="About">About Us</a>
+		</h5>
+		<h5>
+			<a href="Terms.html" class="Terms">Terms & Services</a>
+		</h5>
+	</div>
+
+	<div class="Friends">
+		<h3 class="AboutText">"About Us"</h3>
+		<img src="Images/frineds.jpg" alt="" class="friends" width="50%"
+			height="50%" style="border-radius: 10px">
+	</div>
+
+	<div class="lower">
+
+		<div class="box">
+			<h4>
+				<p
+					style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; padding: 50px;">
+					We are three close friends brought together by a shared passion and
+					a common dream. What started as casual conversations and shared
+					interests turned into a journey of building something meaningful.
+					Each of us brings unique strengths, creativity, and energy to the
+					table, and together, we aim to create a platform that’s helpful,
+					honest, and user-friendly. Our bond as friends is the foundation of
+					our teamwork, and that spirit is reflected in everything we do.
+					We're excited to grow, learn, and make a positive
+					difference—together.</p>
+			</h4>
+
+		</div>
+
+	</div>
+
+	<div class="footer"
+		style="background-color: #222; color: white; padding-top: 30px;">
+		<div class="container-fluid">
+			<div class="row firstrow">
+				<div class="col-md-1"></div>
+
+				<div class="col-md-10">
+					<div class="row">
+
+						<!-- Logo and Name -->
+						<div class="col-md-3">
+							<img src="Images/JVS2O.jpg" alt="JVS Logo" height="50px"
+								width="50px">
+							<h3 style="font-family: 'Times New Roman', Times, serif;">JVS
+								RENTALS</h3>
+						</div>
+
+						<!-- Spacer -->
+						<div class="col-md-1"></div>
+
+						<!-- About Column -->
+						<div class="col-md-2">
+							<h4 style="font-family: 'Times New Roman', Times, serif;">Company</h4>
+							<a href="#" style="color: white; display: block;">About Us</a> <a
+								href="#" style="color: white; display: block;">Our Services</a>
+							<a href="#" style="color: white; display: block;">Privacy
+								Policy</a>
+						</div>
+
+						<!-- Spacer -->
+						<div class="col-md-1"></div>
+
+						<!-- Support Column -->
+						<div class="col-md-2">
+							<h4 style="font-family: 'Times New Roman', Times, serif;">Support</h4>
+							<a href="#" style="color: white; display: block;">FAQ</a> <a
+								href="#" style="color: white; display: block;">Help Center</a> <a
+								href="#" style="color: white; display: block;">Feedback</a>
+						</div>
+
+						<!-- Spacer -->
+						<div class="col-md-1"></div>
+
+						<!-- Contact Column -->
+						<div class="col-md-2">
+							<h4 style="font-family: 'Times New Roman', Times, serif;">Contact</h4>
+							<a href="#" style="color: white; display: block;">Contact Us</a>
+							<a href="#" style="color: white; display: block;">Location</a> <a
+								href="#" style="color: white; display: block;">Terms of
+								Service</a>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+
+		<!-- Horizontal Line -->
+		<hr style="border-color: white; margin-top: 30px;">
+
+		<!-- Social Media Icons -->
+		<footer class="copy" style="margin-top: 20px; text-align: center;">
+			<a href="https://www.facebook.com/" target="_blank"
+				style="color: white; margin: 0 10px;"> <i
+				class="fab fa-facebook-f"></i>
+			</a> <a href="https://www.instagram.com/" target="_blank"
+				style="color: white; margin: 0 10px;"> <i
+				class="fab fa-instagram"></i>
+			</a> <a href="https://www.youtube.com/" target="_blank"
+				style="color: white; margin: 0 10px;"> <i class="fab fa-youtube"></i>
+			</a> <a href="https://twitter.com/" target="_blank"
+				style="color: white; margin: 0 10px;"> <i class="fab fa-twitter"></i>
+			</a>
+		</footer>
+
+		<!-- Copyright -->
+		<h4 class="copy" style="text-align: center; margin-top: 15px;">&copy;
+			2025 All Rights Reserved | JVS Rentals</h4>
+	</div>
+
+
+
+	<script>
+		var a;
+
+		window.onload = function() {
+			a = 0;
+			document.querySelector(".navbar-toggler").onclick = toggleMenu;
+			document.getElementById("close").onclick = toggleMenu;
+		};
+
+		function toggleMenu() {
+			console.log("jj");
+			if (a == 0) {
+				document.getElementById('menu').style.left = "0px";
+				document.getElementById('menu').style.transition = "all 1s";
+				document.getElementById("menu").style.zIndex = 999;
+				a++;
+			} else {
+				document.getElementById('menu').style.left = "-250px";
+				document.getElementById('menu').style.transition = "all 1s";
+				a = 0;
+			}
+		}
+	</script>
+
+
+
+
+</body>
+</html>

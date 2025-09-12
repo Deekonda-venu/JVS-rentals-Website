@@ -1,0 +1,206 @@
+.one{
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.two{
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.three{
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: transparent; /* Change to solid on scroll with JS */
+    z-index: 1;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.Contact {
+	position: absolute;
+	right: 250px;
+	top: 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.Home {
+	position: absolute;
+	right: 620px;
+	top: 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.About {
+	position: absolute;
+	right: 380px;
+	top: 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.Book {
+	position: absolute;
+	right: 490px;
+	top: 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.Terms {
+	position: absolute;
+	right: 70px;
+	top: 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+.Rentals{
+    position: absolute;
+    top: 13px;
+    left: 140px;
+    font-size: 30px;
+    /* box-shadow: ; */
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 4px black;
+}
+.Sign-up{
+    position: absolute;
+    right: 40px;
+    top: 25px;
+    /* font-family: 'Times New Roman', Times, serif; */
+    background-color: white;
+    color: orange;
+    border: 2px solid white;
+    border-radius: 2px;
+    padding: 5px 10px 5px 10px;
+    /* box-shadow: 2px 5px 10px rgb(29, 27, 27); */
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+.logoimage{
+    margin-top: 8px;
+    margin-left:80px;
+    border-radius: 40px;
+    /* border: 1px solid black; */
+    box-shadow: 2px 2px 5px black;
+}
+.login{
+    position: absolute;
+    right: 130px;
+    top: 25px;
+    background-color: white;
+    color: orange;
+    border: 2px solid white;
+    border-radius: 2px;
+    padding: 5px 10px 5px 10px;
+    /* box-shadow: 2px 5px 10px rgb(29, 27, 27); */
+    font-family: 'Times New Roman', Times, serif;
+    /* border-collapse: collapse; */
+    text-decoration: none;
+    
+}
+.login:focus{
+    outline: none;
+    background-color: rgb(193, 201, 209);
+}
+.Registration:focus{
+    outline: none;
+    background-color: rgb(193, 201, 209);
+}
+.navbar-toggler {
+    
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .navbar-toggler:hover{
+    background: linear-gradient( rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.2));
+    border-radius: 2px;
+
+  }
+  .navbar-toggler .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: white;
+    transition: 0.3s;
+    
+  }
+
+  .home-icon {
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .menu {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 729px;
+    background-color: orange;
+    /* border: 1px solid #ccc; */
+    border-top-right-radius: 5px;
+    padding: 10px 0;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+
+  .menu a:hover {
+    background-color: black;
+    /* background: linear-gradient(0,0,0,); */
+  }
+
+  .menu.show {
+    display: flex;
+  }
