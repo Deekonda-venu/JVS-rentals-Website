@@ -142,6 +142,47 @@
 		style="background: linear-gradient(rgb(0, 0, 0, 0.6)); position: fixed; width: 100%; height: 100%; display: none; margin-top: -100px;">
 
 	</div>
+
+	<div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="bookingModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="bookingModalLabel">Book Bike</h4>
+				</div>
+				<div class="modal-body">
+					<form id="bookingForm">
+						<div class="form-group">
+							<label for="bikeName">Bike</label>
+							<input type="text" class="form-control" id="bikeName" name="bikeName" readonly>
+						</div>
+						<div class="form-group">
+							<label for="pickupLocation">Pickup Location</label>
+							<input type="text" class="form-control" id="pickupLocation" name="pickupLocation" placeholder="Select location using LOCATIONS" readonly>
+						</div>
+						<div class="form-group">
+							<label for="customerName">Name</label>
+							<input type="text" class="form-control" id="customerName" name="customerName" required>
+						</div>
+						<div class="form-group">
+							<label for="phone">Phone</label>
+							<input type="tel" class="form-control" id="phone" name="phone" required>
+						</div>
+						<div class="form-group">
+							<label for="pickupDate">Pickup Date</label>
+							<input type="date" class="form-control" id="pickupDate" name="pickupDate" required>
+						</div>
+						<div class="form-group">
+							<label for="days">No. of Days</label>
+							<input type="number" class="form-control" id="days" name="days" min="1" value="1" required>
+						</div>
+						<div id="bookingResult" style="display: none;"></div>
+						<button type="submit" class="btn btn-success" style="background-color: orange; border-color: orange;">Confirm Booking</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="header" id="nav">
 		<button class="navbar-toggler" onclick="toggleMenu()">
 			<span class="bar"></span> <span class="bar"></span> <span class="bar"></span>
@@ -154,7 +195,7 @@
 			<a href="Privacy policy.html" class="item">Privacy Policy</a> <a
 				href="Feedback.html" class="item">Feedback</a>
 		</div>
-		<img src="Images/JVS2O.jpg" height="50px" width="50px;"
+		<img src="JVS2O.jpg" height="50px" width="50px;"
 			class="logoimage">
 		<p class="Rentals">
 			<b>RENTALS</b>
@@ -197,12 +238,12 @@
 		<div class="locationbody">
 			<div class="locationrow">
 				<div class="col1">
-					<img src="Images/hyderbad.png" id="Hyderabad" alt="error"
+					<img src="hyderbad.png" id="Hyderabad" alt="error"
 						width="100%" height="200px"
 						style="border: 1px solid rgba(0, 0, 0, 0.559); border-radius: 2px;">
 				</div>
 				<div class="col1">
-					<img src="Images/khamma.png" alt="error" width="100%"
+					<img src="khamma.png" alt="error" width="100%"
 						height="200px"
 						style="border: 1px solid rgba(0, 0, 0, 0.559); border-radius: 2px;">
 				</div>
@@ -210,12 +251,12 @@
 			</div>
 			<div class="locationrow">
 				<div class="col2">
-					<img src="Images/vijayawada.png" alt="error" width="100%"
+					<img src="vijayawada.png" alt="error" width="100%"
 						height="200px"
 						style="border: 1px solid rgba(0, 0, 0, 0.559); border-radius: 2px;">
 				</div>
 				<div class="col2">
-					<img src="Images/karimnager.png" alt="error" width="100%"
+					<img src="karimnager.png" alt="error" width="100%"
 						height="200px"
 						style="border: 1px solid rgba(0, 0, 0, 0.559); border-radius: 2px;">
 				</div>
@@ -227,7 +268,7 @@
 
 	<div class="cards">
 		<div class="card C1">
-			<img src="Images/Royal Enfiled.png" alt="Image" width="100%">
+			<img src="Royal Enfiled.png" alt="Image" width="100%">
 			<h4 class="Specifications">Specifications</h4>
 			<pre class="content">
 Mileage (Overall)                                                37 kmpl
@@ -241,7 +282,7 @@ Max Torque                                       27 Nm @ 4000 rpm</pre>
 			</button>
 		</div>
 		<div class="card C2">
-			<img src="Images/ktm.png" alt="Image" width="100%">
+			<img src="ktm.png" alt="Image" width="100%">
 			<h4 class="Specifications">Specifications</h4>
 			<pre class="content">
 Mileage (Overall)                                                37 kmpl
@@ -255,7 +296,7 @@ Max Torque                                       27 Nm @ 4000 rpm</pre>
 			</button>
 		</div>
 		<div class="card C3">
-			<img src="Images/hnes.png" alt="Image" width="100%">
+			<img src="hnes.png" alt="Image" width="100%">
 			<h4 class="Specifications">Specifications</h4>
 			<pre class="content">
 Mileage (Overall)                                                37 kmpl
@@ -272,7 +313,7 @@ Max Torque                                       27 Nm @ 4000 rpm</pre>
 	</div>
 	<div class="cards">
 		<div class="card C1">
-			<img src="Images/Activa5g.png" alt="Image" width="100%">
+			<img src="Activa5g.png" alt="Image" width="100%">
 			<h4 class="Specifications">Specifications</h4>
 			<pre class="content">
 Mileage (Overall)                                                37 kmpl
@@ -286,7 +327,7 @@ Max Torque                                       27 Nm @ 4000 rpm</pre>
 			</button>
 		</div>
 		<div class="card C2">
-			<img src="Images/mt150.png" alt="Image" width="100%">
+			<img src="mt150.png" alt="Image" width="100%">
 			<h4 class="Specifications">Specifications</h4>
 			<pre class="content">
 Mileage (Overall)                                                37 kmpl
@@ -300,7 +341,7 @@ Max Torque                                       27 Nm @ 4000 rpm</pre>
 			</button>
 		</div>
 		<div class="card C3">
-			<img src="Images/splender.png" alt="Image" width="100%">
+			<img src="splender.png" alt="Image" width="100%">
 			<h4 class="Specifications">Specifications</h4>
 			<pre class="content">
 Mileage (Overall)                                                37 kmpl
@@ -317,7 +358,7 @@ Max Torque                                       27 Nm @ 4000 rpm</pre>
 	</div>
 	<div class="cards">
 		<div class="card C1">
-			<img src="Images/passion pro.png" alt="Image" width="100%">
+			<img src="passion pro.png" alt="Image" width="100%">
 			<h4 class="Specifications">Specifications</h4>
 			<pre class="content">
 Mileage (Overall)                                                37 kmpl
@@ -331,7 +372,7 @@ Max Torque                                       27 Nm @ 4000 rpm</pre>
 			</button>
 		</div>
 		<div class="card C2">
-			<img src="Images/dio.png" alt="Image" width="100%">
+			<img src="dio.png" alt="Image" width="100%">
 			<h4 class="Specifications">Specifications</h4>
 			<pre class="content">
 Mileage (Overall)                                                37 kmpl
@@ -345,7 +386,7 @@ Max Torque                                       27 Nm @ 4000 rpm</pre>
 			</button>
 		</div>
 		<div class="card C3">
-			<img src="Images/TVS.png" alt="Image" width="100%">
+			<img src="TVS.png" alt="Image" width="100%">
 			<h4 class="Specifications">Specifications</h4>
 			<pre class="content">
 Mileage (Overall)                                                37 kmpl
@@ -362,7 +403,7 @@ Max Torque                                       27 Nm @ 4000 rpm</pre>
 	</div>
 	<div class="cards">
 		<div class="card C1">
-			<img src="Images/yemaha.png" alt="Image" width="100%">
+			<img src="yemaha.png" alt="Image" width="100%">
 			<h4 class="Specifications">Specifications</h4>
 			<pre class="content">
 Mileage (Overall)                                                37 kmpl
@@ -376,7 +417,7 @@ Max Torque                                       27 Nm @ 4000 rpm</pre>
 			</button>
 		</div>
 		<div class="card C2">
-			<img src="Images/ns.png" alt="Image" width="100%">
+			<img src="ns.png" alt="Image" width="100%">
 			<h4 class="Specifications">Specifications</h4>
 			<pre class="content">
 Mileage (Overall)                                                37 kmpl
@@ -390,7 +431,7 @@ Max Torque                                       27 Nm @ 4000 rpm</pre>
 			</button>
 		</div>
 		<div class="card C3">
-			<img src="Images/TVS.png" alt="Image" width="100%">
+			<img src="TVS.png" alt="Image" width="100%">
 			<h4 class="Specifications">Specifications</h4>
 			<pre class="content">
 Mileage (Overall)                                                37 kmpl
@@ -407,7 +448,7 @@ Max Torque                                       27 Nm @ 4000 rpm</pre>
 	</div>
 	<div class="cards">
 		<div class="card C1">
-			<img src="Images/mt150.png" alt="Image" width="100%">
+			<img src="mt150.png" alt="Image" width="100%">
 			<h4 class="Specifications">Specifications</h4>
 			<pre class="content">
 Mileage (Overall)                                                37 kmpl
@@ -421,7 +462,7 @@ Max Torque                                       27 Nm @ 4000 rpm</pre>
 			</button>
 		</div>
 		<div class="card C2">
-			<img src="Images/Royal Enfiled.png" alt="Image" width="100%">
+			<img src="Royal Enfiled.png" alt="Image" width="100%">
 			<h4 class="Specifications">Specifications</h4>
 			<pre class="content">
 Mileage (Overall)                                                37 kmpl
@@ -435,7 +476,7 @@ Max Torque                                       27 Nm @ 4000 rpm</pre>
 			</button>
 		</div>
 		<div class="card C3">
-			<img src="Images/duke.png" alt="Image" width="100%">
+			<img src="duke.png" alt="Image" width="100%">
 			<h4 class="Specifications">Specifications</h4>
 			<pre class="content">
 Mileage (Overall)                                                37 kmpl
@@ -462,7 +503,7 @@ Max Torque                                       27 Nm @ 4000 rpm</pre>
 
 						<!-- Logo and Name -->
 						<div class="col-md-3">
-							<img src="Images/JVS2O.jpg" alt="JVS Logo" height="50px"
+							<img src="JVS2O.jpg" alt="JVS Logo" height="50px"
 								width="50px">
 							<h3 style="font-family: 'Times New Roman', Times, serif;">JVS
 								RENTALS</h3>
@@ -560,6 +601,7 @@ Max Torque                                       27 Nm @ 4000 rpm</pre>
 		function toggleMenu() {
 			if (a == 0) {
 
+				document.getElementById('menu').style.display = "flex";
 				document.getElementById('menu').style.left = 0
 				document.getElementById('menu').style.transition = "all 1s";
 				document.getElementById("menu").style.zIndex = 999;
@@ -568,6 +610,7 @@ Max Torque                                       27 Nm @ 4000 rpm</pre>
 				console.log("venu");
 				document.getElementById('menu').style.left = -250;
 				document.getElementById('menu').style.transition = "all 1s";
+				document.getElementById('menu').style.display = "none";
 				a = 0;
 			}
 
@@ -597,6 +640,51 @@ Max Torque                                       27 Nm @ 4000 rpm</pre>
 			document.getElementById("popid").style.display = "none";
 			document.getElementById("body").style.display = "none";
 		}
+
+		function getSelectedLocation() {
+			var el = document.getElementById("locationbutton");
+			if (!el) {
+				return "";
+			}
+			var v = (el.innerText || "").trim();
+			if (v === "LOCATIONS") {
+				return "";
+			}
+			return v;
+		}
+
+		$(function() {
+			$(document).on('click', '.booknow', function() {
+				var $card = $(this).closest('.card');
+				var src = ($card.find('img').first().attr('src') || '').trim();
+				var bike = src ? src.replace(/\.[^/.]+$/, '') : 'Bike';
+				$('#bikeName').val(bike);
+				$('#pickupLocation').val(getSelectedLocation());
+				$('#bookingResult').hide().text('');
+				$('#bookingForm')[0].reset();
+				$('#bikeName').val(bike);
+				$('#pickupLocation').val(getSelectedLocation());
+				$('#bookingModal').modal('show');
+			});
+
+			$('#bookingForm').on('submit', function(e) {
+				e.preventDefault();
+				var bike = $('#bikeName').val();
+				var loc = $('#pickupLocation').val() || 'Not selected';
+				var name = $('#customerName').val();
+				var date = $('#pickupDate').val();
+				var days = $('#days').val();
+				$('#bookingResult')
+					.css({"marginTop":"15px","padding":"10px","border":"1px solid rgba(0,0,0,0.15)","borderRadius":"6px"})
+					.html('<b>Booking Confirmed!</b><br>' +
+						'Bike: ' + bike + '<br>' +
+						'Location: ' + loc + '<br>' +
+						'Name: ' + name + '<br>' +
+						'Date: ' + date + '<br>' +
+						'Days: ' + days)
+					.show();
+			});
+		});
 	</script>
 </body>
 </html>
