@@ -7,10 +7,12 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 
 import Com.JVS.DAO_DTO.Login_JDBC;
 import Com.JVS.DAO_DTO.Login_Model;
+import Com.JVS.DAO_DTO.Registration_Model;
 
 
 @WebServlet("/Login")
@@ -39,13 +41,16 @@ public class LoginController extends HttpServlet {
 		
 		if(status.equals("success")) {
 			System.out.println("success");
-			request.setAttribute("message", "Registration successful!");
+			Registration_Model user = jdbc.getUserByEmail(email);
+			HttpSession session = request.getSession(true);
+			session.setAttribute("user", user);
+			request.setAttribute("message", "Login successful!");
 		    RequestDispatcher rd = request.getRequestDispatcher("Home.html");
 		    rd.forward(request, response);
 			
 		}else {
 			System.out.println("failed");
-			 request.setAttribute("message", "Registration failed!");
+			 request.setAttribute("message", "Login failed!");
 			    RequestDispatcher rd = request.getRequestDispatcher("Login.html");
 			    rd.forward(request, response);
 			

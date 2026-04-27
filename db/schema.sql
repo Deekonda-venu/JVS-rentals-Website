@@ -1,0 +1,26 @@
+CREATE DATABASE IF NOT EXISTS JVS_Rentals;
+USE JVS_Rentals;
+
+CREATE TABLE IF NOT EXISTS Rentals_data (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  Firstname VARCHAR(100) NOT NULL,
+  Lastname VARCHAR(100) NOT NULL,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  mobilenumber VARCHAR(30) NOT NULL,
+  Password VARCHAR(255) NOT NULL,
+  date_of_birth VARCHAR(50)
+);
+
+CREATE TABLE IF NOT EXISTS bookings (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_email VARCHAR(255) NOT NULL,
+  bike_name VARCHAR(255) NOT NULL,
+  pickup_location VARCHAR(100),
+  pickup_date DATE NOT NULL,
+  days INT NOT NULL,
+  phone VARCHAR(30),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  CONSTRAINT fk_bookings_user_email
+    FOREIGN KEY (user_email) REFERENCES Rentals_data(email)
+    ON DELETE CASCADE
+);

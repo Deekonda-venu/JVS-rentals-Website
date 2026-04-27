@@ -151,7 +151,7 @@
 					<h4 class="modal-title" id="bookingModalLabel">Book Bike</h4>
 				</div>
 				<div class="modal-body">
-					<form id="bookingForm">
+					<form id="bookingForm" action="Book" method="post">
 						<div class="form-group">
 							<label for="bikeName">Bike</label>
 							<input type="text" class="form-control" id="bikeName" name="bikeName" readonly>
@@ -658,8 +658,6 @@ Max Torque                                       27 Nm @ 4000 rpm</pre>
 				var $card = $(this).closest('.card');
 				var src = ($card.find('img').first().attr('src') || '').trim();
 				var bike = src ? src.replace(/\.[^/.]+$/, '') : 'Bike';
-				$('#bikeName').val(bike);
-				$('#pickupLocation').val(getSelectedLocation());
 				$('#bookingResult').hide().text('');
 				$('#bookingForm')[0].reset();
 				$('#bikeName').val(bike);
@@ -667,21 +665,10 @@ Max Torque                                       27 Nm @ 4000 rpm</pre>
 				$('#bookingModal').modal('show');
 			});
 
-			$('#bookingForm').on('submit', function(e) {
-				e.preventDefault();
-				var bike = $('#bikeName').val();
-				var loc = $('#pickupLocation').val() || 'Not selected';
-				var name = $('#customerName').val();
-				var date = $('#pickupDate').val();
-				var days = $('#days').val();
+			$('#bookingForm').on('submit', function() {
 				$('#bookingResult')
 					.css({"marginTop":"15px","padding":"10px","border":"1px solid rgba(0,0,0,0.15)","borderRadius":"6px"})
-					.html('<b>Booking Confirmed!</b><br>' +
-						'Bike: ' + bike + '<br>' +
-						'Location: ' + loc + '<br>' +
-						'Name: ' + name + '<br>' +
-						'Date: ' + date + '<br>' +
-						'Days: ' + days)
+					.html('<b>Processing booking...</b>')
 					.show();
 			});
 		});
