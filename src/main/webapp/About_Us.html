@@ -125,7 +125,7 @@
 				href="Feedback.html" class="item">Feedback</a>
 		</div>
 
-		<img src="Images/JVS2O.jpg" height="50px" width="50px;"
+		<img src="JVS2O.jpg" height="50px" width="50px;"
 			class="logoimage">
 		<p class="Rentals">
 			<b>RENTALS</b>
@@ -154,7 +154,7 @@
 
 	<div class="Friends">
 		<h3 class="AboutText">"About Us"</h3>
-		<img src="Images/frineds.jpg" alt="" class="friends" width="50%"
+		<img src="frineds.jpg" alt="" class="friends" width="50%"
 			height="50%" style="border-radius: 10px">
 	</div>
 
@@ -190,7 +190,7 @@
 
 						<!-- Logo and Name -->
 						<div class="col-md-3">
-							<img src="Images/JVS2O.jpg" alt="JVS Logo" height="50px"
+							<img src="JVS2O.jpg" alt="JVS Logo" height="50px"
 								width="50px">
 							<h3 style="font-family: 'Times New Roman', Times, serif;">JVS
 								RENTALS</h3>
@@ -275,6 +275,7 @@
 		function toggleMenu() {
 			console.log("jj");
 			if (a == 0) {
+				document.getElementById('menu').style.display = "flex";
 				document.getElementById('menu').style.left = "0px";
 				document.getElementById('menu').style.transition = "all 1s";
 				document.getElementById("menu").style.zIndex = 999;
@@ -282,6 +283,7 @@
 			} else {
 				document.getElementById('menu').style.left = "-250px";
 				document.getElementById('menu').style.transition = "all 1s";
+				document.getElementById('menu').style.display = "none";
 				a = 0;
 			}
 		}
